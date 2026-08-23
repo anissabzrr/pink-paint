@@ -616,10 +616,24 @@ details[open] > summary::marker {
 
 /* For Safari on iPad, Fullscreen mode overlays the system bar, completely obscuring our menu bar. */
 /* Code in layout.css adds a spacer to the top of the page, and this styles it with the title bar gradient. */
-.jspaint::before {
+
+/* ACTIVE TITLE BAR */
+.os-window .window-titlebar,
+body > .window-titlebar {
     background: linear-gradient(
         to right,
-        #E88FAD,
-        #F6C1D4
+        #E88FAD 0%,
+        #F6C1D4 100%
     ) !important;
+    color: #FFFFFF !important;
+}
+
+/* INACTIVE / UNFOCUSED TITLE BAR */
+.os-window:not(.focused) .window-titlebar {
+    background: linear-gradient(
+        to right,
+        #E8AFC2 0%,
+        #F5D0DC 100%
+    ) !important;
+    color: #FFFFFF !important;
 }
