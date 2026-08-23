@@ -1,5 +1,5 @@
 // @ts-check
-const default_theme = "classic.css";
+const default_theme = "girly-pink.css";
 const theme_storage_key = "jspaint theme";
 const disable_seasonal_theme_key = "jspaint disable seasonal theme";
 const href_for = (theme) => `styles/themes/${theme}`;
