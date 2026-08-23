@@ -3,35 +3,35 @@
 import { make_stripe_pattern } from "./functions.js";
 
 const default_palette = [
-	"rgb(0,0,0)", // Black
-	"rgb(128,128,128)", // Dark Gray
-	"rgb(128,0,0)", // Dark Red
-	"rgb(128,128,0)", // Pea Green
-	"rgb(0,128,0)", // Dark Green
-	"rgb(0,128,128)", // Slate
-	"rgb(0,0,128)", // Dark Blue
-	"rgb(128,0,128)", // Lavender
-	"rgb(128,128,64)", //
-	"rgb(0,64,64)", //
-	"rgb(0,128,255)", //
-	"rgb(0,64,128)", //
-	"rgb(64,0,255)", //
-	"rgb(128,64,0)", //
+	"rgb(38,28,34)", // Soft Black
+	"rgb(122,93,106)", // Dusty Mauve
+	"rgb(179,74,108)", // Deep Pink
+	"rgb(190,143,94)", // Caramel
+	"rgb(105,154,107)", // Sage
+	"rgb(79,148,146)", // Deep Aqua
+	"rgb(87,113,174)", // Periwinkle Blue
+	"rgb(151,100,173)", // Lavender
+	"rgb(179,154,102)", // Mustard Cream
+	"rgb(76,134,117)", // Deep Mint
+	"rgb(92,165,204)", // Sky Blue
+	"rgb(92,124,170)", // Denim Blue
+	"rgb(157,116,204)", // Soft Violet
+	"rgb(191,121,91)", // Peach Brown
 
 	"rgb(255,255,255)", // White
-	"rgb(192,192,192)", // Light Gray
-	"rgb(255,0,0)", // Bright Red
-	"rgb(255,255,0)", // Yellow
-	"rgb(0,255,0)", // Bright Green
-	"rgb(0,255,255)", // Cyan
-	"rgb(0,0,255)", // Bright Blue
-	"rgb(255,0,255)", // Magenta
-	"rgb(255,255,128)", //
-	"rgb(0,255,128)", //
-	"rgb(128,255,255)", //
-	"rgb(128,128,255)", //
-	"rgb(255,0,128)", //
-	"rgb(255,128,64)", //
+	"rgb(244,217,227)", // Pale Pink Gray
+	"rgb(240,112,146)", // Bright Pink
+	"rgb(248,224,140)", // Butter Yellow
+	"rgb(173,222,154)", // Light Green
+	"rgb(145,229,211)", // Aqua
+	"rgb(143,187,230)", // Baby Blue
+	"rgb(223,151,219)", // Pink Lavender
+	"rgb(255,239,174)", // Cream Yellow
+	"rgb(160,226,184)", // Mint
+	"rgb(176,228,236)", // Pale Cyan
+	"rgb(183,196,239)", // Pale Periwinkle
+	"rgb(244,148,194)", // Candy Pink
+	"rgb(244,174,126)", // Peach
 ];
 const monochrome_palette_as_colors = [
 	"rgb(0,0,0)",
