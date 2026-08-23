@@ -619,3 +619,13 @@ details[open] > summary::marker {
 .jspaint::before {
 	background: linear-gradient(to left, var(--ActiveTitle), var(--GradientActiveTitle));
 }
+
+/* PINK MAIN TITLE BAR */
+.window-titlebar {
+    background: linear-gradient(
+        90deg,
+        #F06F9D,
+        #F7A1BF
+    ) !important;
+    color: #FFFFFF !important;
+}
