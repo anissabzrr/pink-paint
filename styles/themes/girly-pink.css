@@ -12,6 +12,10 @@
     --ButtonShadow: #E89AB5;
     --ButtonDkShadow: #B94F76;
 
+	/* Menu bar */
+    --Menu: #FFDCE8;
+    --MenuText: #4A1F2E;
+
     /* Interface text */
     --ButtonText: #4A1F2E;
     --GrayText: #B47A8E;
@@ -619,10 +623,4 @@ details[open] > summary::marker {
 
 .jspaint::before {
     background: linear-gradient(to left, var(--ActiveTitle), var(--GradientActiveTitle));
-}
-
-/* PINK MAIN MENU BAR */
-.menu-bar {
-    background: #FFDCE8 !important;
-    color: #4A1F2E !important;
 }
