@@ -3,35 +3,35 @@
 import { make_stripe_pattern } from "./functions.js";
 
 const default_palette = [
-	"rgb(38,28,34)", // Soft Black
-	"rgb(122,93,106)", // Dusty Mauve
-	"rgb(179,74,108)", // Deep Pink
-	"rgb(190,143,94)", // Caramel
-	"rgb(105,154,107)", // Sage
-	"rgb(79,148,146)", // Deep Aqua
-	"rgb(87,113,174)", // Periwinkle Blue
-	"rgb(151,100,173)", // Lavender
-	"rgb(179,154,102)", // Mustard Cream
-	"rgb(76,134,117)", // Deep Mint
-	"rgb(92,165,204)", // Sky Blue
-	"rgb(92,124,170)", // Denim Blue
-	"rgb(157,116,204)", // Soft Violet
-	"rgb(191,121,91)", // Peach Brown
+	"rgb(48,34,42)", // Soft Black
+	"rgb(128,96,112)", // Dusty Mauve
+	"rgb(181,78,116)", // Deep Rose
+	"rgb(189,130,104)", // Muted Peach
+	"rgb(119,162,125)", // Soft Sage
+	"rgb(82,151,153)", // Teal
+	"rgb(91,119,181)", // Periwinkle Blue
+	"rgb(157,105,182)", // Lavender
+	"rgb(188,156,115)", // Honey Beige
+	"rgb(88,146,126)", // Deep Mint
+	"rgb(96,169,210)", // Sky Blue
+	"rgb(106,132,184)", // Soft Denim
+	"rgb(170,121,207)", // Violet
+	"rgb(198,126,103)", // Peach Coral
 
 	"rgb(255,255,255)", // White
-	"rgb(244,217,227)", // Pale Pink Gray
-	"rgb(240,112,146)", // Bright Pink
-	"rgb(248,224,140)", // Butter Yellow
-	"rgb(173,222,154)", // Light Green
-	"rgb(145,229,211)", // Aqua
-	"rgb(143,187,230)", // Baby Blue
-	"rgb(223,151,219)", // Pink Lavender
-	"rgb(255,239,174)", // Cream Yellow
-	"rgb(160,226,184)", // Mint
-	"rgb(176,228,236)", // Pale Cyan
-	"rgb(183,196,239)", // Pale Periwinkle
-	"rgb(244,148,194)", // Candy Pink
-	"rgb(244,174,126)", // Peach
+	"rgb(249,222,232)", // Blush
+	"rgb(246,124,162)", // Candy Pink
+	"rgb(255,226,170)", // Butter Cream
+	"rgb(188,227,170)", // Pastel Green
+	"rgb(160,229,215)", // Mint Aqua
+	"rgb(155,197,235)", // Baby Blue
+	"rgb(226,164,223)", // Pink Lilac
+	"rgb(255,239,193)", // Pale Cream
+	"rgb(177,232,198)", // Mint
+	"rgb(187,232,240)", // Pale Cyan
+	"rgb(196,202,241)", // Pale Periwinkle
+	"rgb(246,163,205)", // Bubblegum Pink
+	"rgb(248,186,146)", // Soft Peach
 ];
 const monochrome_palette_as_colors = [
 	"rgb(0,0,0)",
