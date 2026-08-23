@@ -971,210 +971,78 @@ const menus = {
 		{
 			emoji_icon: "💄",
 			label: localize("&Themes"),
-			submenu: [
+						submenu: [
 				{
 					emoji_icon: "⬜",
-					label: localize("&Classic Light"),
+					label: localize("&Classic"),
 					speech_recognition: [
-						"reset theme", "revert theme setting",
-						"classic theme", "switch to classic theme", "use classic theme", "set theme to classic", "set theme classic", "switch to classic theme", "switch theme to classic", "switch theme classic",
-						"retro theme", "switch to retro theme", "use retro theme", "set theme to retro", "set theme retro", "switch to retro theme", "switch theme to retro", "switch theme retro",
-						"normal theme", "switch to normal theme", "use normal theme", "set theme to normal", "set theme normal", "switch to normal theme", "switch theme to normal", "switch theme normal",
-						"default theme", "switch to default theme", "use default theme", "set theme to default", "set theme default", "switch to default theme", "switch theme to default", "switch theme default",
-						"original theme", "switch to original theme", "use original theme", "set theme to original", "set theme original", "switch to original theme", "switch theme to original", "switch theme original",
-						"basic theme", "switch to basic theme", "use basic theme", "set theme to basic", "set theme basic", "switch to basic theme", "switch theme to basic", "switch theme basic",
-						"90s theme", "switch to 90s theme", "use 90s theme", "set theme to 90s", "set theme 90s", "switch to 90s theme", "switch theme to 90s", "switch theme 90s",
-						"windows 98 theme", "switch to windows 98 theme", "use windows 98 theme", "set theme to windows 98", "set theme windows 98", "switch to windows 98 theme", "switch theme to windows 98", "switch theme windows 98",
-						"windows 95 theme", "switch to windows 95 theme", "use windows 95 theme", "set theme to windows 95", "set theme windows 95", "switch to windows 95 theme", "switch theme to windows 95", "switch theme windows 95",
-						"windows 2000 theme", "switch to windows 2000 theme", "use windows 2000 theme", "set theme to windows 2000", "set theme windows 2000", "switch to windows 2000 theme", "switch theme to windows 2000", "switch theme windows 2000",
-						// in contrast to the Dark theme:
-						// TODO: stick with Modern/Classic while changing to Dark/Light variant
-						"light theme", "switch to light theme", "use light theme", "set theme to light", "set theme light", "switch to light theme", "switch theme to light", "switch theme light",
-						"light mode", "switch to light mode", "use light mode", "set mode to light", "set mode light", "switch to light mode", "switch mode to light", "switch mode light",
-						"bright theme", "switch to bright theme", "use bright theme", "set theme to bright", "set theme bright", "switch to bright theme", "switch theme to bright", "switch theme bright",
-						"bright mode", "switch to bright mode", "use bright mode", "set mode to bright", "set mode bright", "switch to bright mode", "switch mode to bright", "switch mode bright",
-						"day theme", "switch to day theme", "use day theme", "set theme to day", "set theme day", "switch to day theme", "switch theme to day", "switch theme day",
-						"day mode", "switch to day mode", "use day mode", "set mode to day", "set mode day", "switch to day mode", "switch mode to day", "switch mode day",
-						"go light", "go bright",
-						// new naming scheme
-						"classic light", "light classic",
+						"classic theme",
+						"switch to classic theme",
+						"use classic theme",
+						"windows 98 theme",
 					],
 					action: () => {
 						set_theme("classic.css");
 					},
 					enabled: () => get_theme() != "classic.css",
-					description: localize("Makes JS Paint look like MS Paint from Windows 98."),
+					description: localize("Uses the original Windows 98 Paint theme."),
 				},
 				{
-					emoji_icon: "⬛",
-					label: localize("Classic &Dark"),
+					emoji_icon: "🩷",
+					label: localize("&Pink"),
 					speech_recognition: [
-						"dark theme", "switch to dark theme", "use dark theme", "set theme to dark", "set theme dark", "switch to dark theme", "switch theme to dark", "switch theme dark",
-						"dark mode", "switch to dark mode", "use dark mode", "set mode to dark", "set mode dark", "switch to dark mode", "switch mode to dark", "switch mode dark",
-						"dim theme", "switch to dim theme", "use dim theme", "set theme to dim", "set theme dim", "switch to dim theme", "switch theme to dim", "switch theme dim",
-						"dim mode", "switch to dim mode", "use dim mode", "set mode to dim", "set mode dim", "switch to dim mode", "switch mode to dim", "switch mode dim",
-						"night theme", "switch to night theme", "use night theme", "set theme to night", "set theme night", "switch to night theme", "switch theme to night", "switch theme night",
-						"night mode", "switch to night mode", "use night mode", "set mode to night", "set mode night", "switch to night mode", "switch mode to night", "switch mode night",
-						"go dark", "go dim",
-						// new naming scheme
-						"classic dark", "dark classic",
+						"pink theme",
+						"switch to pink theme",
+						"use pink theme",
 					],
 					action: () => {
-						set_theme("dark.css");
+						set_theme("girly-pink.css");
 					},
-					enabled: () => get_theme() != "dark.css",
-					description: localize("Makes JS Paint look like MS Paint from Windows 98, with a dark color scheme."),
+					enabled: () => get_theme() != "girly-pink.css",
+					description: localize("Uses the pink theme."),
 				},
 				{
-					emoji_icon: "⚪",
-					label: localize("&Modern Light"),
+					emoji_icon: "💜",
+					label: localize("P&urple"),
 					speech_recognition: [
-						"modern theme", "switch to modern theme", "use modern theme", "set theme to modern", "set theme modern", "switch to modern theme", "switch theme to modern", "switch theme modern",
-						// new naming scheme
-						"modern light", "light modern",
+						"purple theme",
+						"switch to purple theme",
+						"use purple theme",
 					],
 					action: () => {
-						set_theme("modern.css");
+						set_theme("girly-purple.css");
 					},
-					enabled: () => get_theme() != "modern.css",
-					description: localize("Gives JS Paint a more modern look, with light colors."),
+					enabled: () => get_theme() != "girly-purple.css",
+					description: localize("Uses the purple theme."),
 				},
 				{
-					emoji_icon: "⚫",
-					label: localize("Mod&ern Dark"),
+					emoji_icon: "💛",
+					label: localize("&Yellow"),
 					speech_recognition: [
-						"dark modern theme", "switch to dark modern theme", "use dark modern theme", "set theme to dark modern", "set theme dark modern", "switch to dark modern theme", "switch theme to dark modern", "switch theme dark modern",
-						// new naming scheme
-						"modern dark", "dark modern",
+						"yellow theme",
+						"switch to yellow theme",
+						"use yellow theme",
 					],
 					action: () => {
-						set_theme("modern-dark.css");
+						set_theme("girly-yellow.css");
 					},
-					enabled: () => get_theme() != "modern-dark.css",
-					description: localize("Gives JS Paint a more modern look, with dark colors."),
+					enabled: () => get_theme() != "girly-yellow.css",
+					description: localize("Uses the yellow theme."),
 				},
 				{
-					emoji_icon: "❄️",
-					label: localize("&Winter"),
+					emoji_icon: "🤎",
+					label: localize("&Brown"),
 					speech_recognition: [
-						"winter theme", "switch to winter theme", "use winter theme", "set theme to winter", "set theme winter", "switch to winter theme", "switch theme to winter", "switch theme winter",
-						"holiday theme", "switch to holiday theme", "use holiday theme", "set theme to holiday", "set theme holiday", "switch to holiday theme", "switch theme to holiday", "switch theme holiday",
-						"christmas theme", "switch to christmas theme", "use christmas theme", "set theme to christmas", "set theme christmas", "switch to christmas theme", "switch theme to christmas", "switch theme christmas",
-						"hanukkah theme", "switch to hanukkah theme", "use hanukkah theme", "set theme to hanukkah", "set theme hanukkah", "switch to hanukkah theme", "switch theme to hanukkah", "switch theme hanukkah",
+						"brown theme",
+						"switch to brown theme",
+						"use brown theme",
 					],
 					action: () => {
-						set_theme("winter.css");
+						set_theme("girly-brown.css");
 					},
-					enabled: () => get_theme() != "winter.css",
-					description: localize("Makes JS Paint look festive for the holidays."),
+					enabled: () => get_theme() != "girly-brown.css",
+					description: localize("Uses the brown theme."),
 				},
-				{
-					emoji_icon: "🤘",
-					label: localize("&Occult"),
-					speech_recognition: [
-						"occult theme", "switch to occult theme", "use occult theme", "set theme to occult", "set theme occult", "switch to occult theme", "switch theme to occult", "switch theme occult",
-						"occultist theme", "switch to occultist theme", "use occultist theme", "set theme to occultist", "set theme occultist", "switch to occultist theme", "switch theme to occultist", "switch theme occultist",
-						"occultism theme", "switch to occultism theme", "use occultism theme", "set theme to occultism", "set theme occultism", "switch to occultism theme", "switch theme to occultism", "switch theme occultism",
-						"satan theme", "switch to satan theme", "use satan theme", "set theme to satan", "set theme satan", "switch to satan theme", "switch theme to satan", "switch theme satan",
-						"satanic theme", "switch to satanic theme", "use satanic theme", "set theme to satanic", "set theme satanic", "switch to satanic theme", "switch theme to satanic", "switch theme satanic",
-						"satanist theme", "switch to satanist theme", "use satanist theme", "set theme to satanist", "set theme satanist", "switch to satanist theme", "switch theme to satanist", "switch theme satanist",
-						"satanism theme", "switch to satanism theme", "use satanism theme", "set theme to satanism", "set theme satanism", "switch to satanism theme", "switch theme to satanism", "switch theme satanism",
-						"demon theme", "switch to demon theme", "use demon theme", "set theme to demon", "set theme demon", "switch to demon theme", "switch theme to demon", "switch theme demon",
-						"demonic theme", "switch to demonic theme", "use demonic theme", "set theme to demonic", "set theme demonic", "switch to demonic theme", "switch theme to demonic", "switch theme demonic",
-						"daemon theme", "switch to daemon theme", "use daemon theme", "set theme to daemon", "set theme daemon", "switch to daemon theme", "switch theme to daemon", "switch theme daemon",
-						"daemonic theme", "switch to daemonic theme", "use daemonic theme", "set theme to daemonic", "set theme daemonic", "switch to daemonic theme", "switch theme to daemonic", "switch theme daemonic",
-						"devil theme", "switch to devil theme", "use devil theme", "set theme to devil", "set theme devil", "switch to devil theme", "switch theme to devil", "switch theme devil",
-						"devilish theme", "switch to devilish theme", "use devilish theme", "set theme to devilish", "set theme devilish", "switch to devilish theme", "switch theme to devilish", "switch theme devilish",
-						"devil worship theme", "switch to devil worship theme", "use devil worship theme", "set theme to devil worship", "set theme devil worship", "switch to devil worship theme", "switch theme to devil worship", "switch theme devil worship",
-						"witchcraft theme", "switch to witchcraft theme", "use witchcraft theme", "set theme to witchcraft", "set theme witchcraft", "switch to witchcraft theme", "switch theme to witchcraft", "switch theme witchcraft",
-						"witch theme", "switch to witch theme", "use witch theme", "set theme to witch", "set theme witch", "switch to witch theme", "switch theme to witch", "switch theme witch",
-						"witchy theme", "switch to witchy theme", "use witchy theme", "set theme to witchy", "set theme witchy", "switch to witchy theme", "switch theme to witchy", "switch theme witchy",
-						"witchery theme", "switch to witchery theme", "use witchery theme", "set theme to witchery", "set theme witchery", "switch to witchery theme", "switch theme to witchery", "switch theme witchery",
-						"ritual theme", "switch to ritual theme", "use ritual theme", "set theme to ritual", "set theme ritual", "switch to ritual theme", "switch theme to ritual", "switch theme ritual",
-						"ritualism theme", "switch to ritualism theme", "use ritualism theme", "set theme to ritualism", "set theme ritualism", "switch to ritualism theme", "switch theme to ritualism", "switch theme ritualism",
-						"ritualistic theme", "switch to ritualistic theme", "use ritualistic theme", "set theme to ritualistic", "set theme ritualistic", "switch to ritualistic theme", "switch theme to ritualistic", "switch theme ritualistic",
-						"Halloween theme", "switch to Halloween theme", "use Halloween theme", "set theme to Halloween", "set theme Halloween", "switch to Halloween theme", "switch theme to Halloween", "switch theme Halloween",
-
-						"summon demon", "summon daemon", "summon demon theme", "summon daemon theme",
-						"summon demons", "summon daemons", "summon demons theme", "summon daemons theme",
-						"demon summoning", "daemon summoning", "demon summoning theme", "daemon summoning theme",
-						"demons summoning", "daemons summoning", "demons summoning theme", "daemons summoning theme",
-						"welcome demon", "welcome daemon", "welcome demon theme", "welcome daemon theme",
-						"welcome demons", "welcome daemons", "welcome demons theme", "welcome daemons theme",
-						"summon satan", "summon satan theme", "summon daemon theme",
-						"satan summoning", "satan summoning theme", "daemon summoning theme",
-						"welcome satan", "welcome satan theme",
-						"summon devil", "summon the devil", "summon devil theme", "summon the devil theme",
-						"welcome devil", "welcome the devil", "welcome devil theme", "welcome the devil theme",
-
-						"I beseech thee", "I entreat thee", "I summon thee", "I call upon thy name", "I call upon thine name", "Lord Satan", "hail Satan", "hail Lord Satan", "O Mighty Satan", "Oh Mighty Satan",
-						"In nomine Dei nostri Satanas Luciferi Excelsi", "Rege Satanas", "Ave Satanas", "Rege Satana", "Ave Satana",
-						"go demonic", "go daemonic", "go occult", "666",
-						"begin ritual", "begin the ritual", "begin a ritual",
-						"start ritual", "start the ritual", "start a ritual",
-					],
-					action: () => {
-						set_theme("occult.css");
-					},
-					enabled: () => get_theme() != "occult.css",
-					description: localize("Starts the ritual."),
-				},
-				{
-					emoji_icon: "🫧",
-					label: localize("&Bubblegum"),
-					speech_recognition: [
-						"bubblegum theme", "switch to bubblegum theme", "use bubblegum theme", "set theme to bubblegum", "set theme bubblegum", "switch to bubblegum theme", "switch theme to bubblegum", "switch theme bubblegum",
-						"pink theme", "switch to pink theme", "use pink theme", "set theme to pink", "set theme pink", "switch to pink theme", "switch theme to pink", "switch theme pink",
-						"pearlescent theme", "pearlescent bubblegum", "pearlescent pink",
-						"pearly theme", "pearly bubblegum", "pearly pink",
-						"shiny theme", "shiny bubblegum", "shiny pink",
-						"3D theme", "3D bubblegum", "3D pink",
-						"bubbly theme",
-						"corporate bubblegum",
-						"business pink",
-					],
-					action: () => {
-						set_theme("bubblegum.css");
-					},
-					enabled: () => get_theme() != "bubblegum.css",
-					description: localize("Makes JS Paint look like pearlescent bubblegum."),
-				},
-				// {
-				// 	emoji_icon: "🪐",
-				// 	label: localize("&Retro Futurist"),
-				// 	speech_recognition: [
-				// 		"retrofuturist theme", "switch to retrofuturist theme", "use retrofuturist theme", "set theme to retrofuturist", "set theme retrofuturist", "switch to retrofuturist theme", "switch theme to retrofuturist", "switch theme retrofuturist",
-				// 		"retro futurist theme", "switch to retro futurist theme", "use retro futurist theme", "set theme to retro futurist", "set theme retro futurist", "switch to retro futurist theme", "switch theme to retro futurist", "switch theme retro futurist",
-				// 		"retrofuturistic theme", "switch to retrofuturistic theme", "use retrofuturistic theme", "set theme to retrofuturistic", "set theme retrofuturistic", "switch to retrofuturistic theme", "switch theme to retrofuturistic", "switch theme retrofuturistic",
-				// 		"retro futuristic theme", "switch to retro futuristic theme", "use retro futuristic theme", "set theme to retro futuristic", "set theme retro futuristic", "switch to retro futuristic theme", "switch theme to retro futuristic", "switch theme retro futuristic",
-				// 		// spell-checker: disable
-				// 		"scifi theme", "switch to scifi theme", "use scifi theme", "set theme to scifi", "set theme scifi", "switch to scifi theme", "switch theme to scifi", "switch theme scifi",
-				// 		// spell-checker: enable
-				// 		"sci-fi theme", "switch to sci-fi theme", "use sci-fi theme", "set theme to sci-fi", "set theme sci-fi", "switch to sci-fi theme", "switch theme to sci-fi", "switch theme sci-fi",
-				// 	],
-				// 	action: () => {
-				// 		set_theme("retrofuturist.css");
-				// 	},
-				// 	enabled: false,
-				// 	// enabled: () => get_theme() != "retrofuturist.css",
-				// 	description: localize("Makes JS Paint look like the future as imagined in the past."),
-				// },
-				// {
-				// 	emoji_icon: "🧺",
-				// 	label: localize("&Picnic"),
-				// 	speech_recognition: [
-				// 		"picnic theme", "switch to picnic theme", "use picnic theme", "set theme to picnic", "set theme picnic", "switch to picnic theme", "switch theme to picnic", "switch theme picnic",
-				// 		"pic-nic theme", "switch to pic-nic theme", "use pic-nic theme", "set theme to pic-nic", "set theme pic-nic", "switch to pic-nic theme", "switch theme to pic-nic", "switch theme pic-nic",
-				// 		"sandbox theme", "switch to sandbox theme", "use sandbox theme", "set theme to sandbox", "set theme sandbox", "switch to sandbox theme", "switch theme to sandbox", "switch theme sandbox",
-				// 		"wooden theme", "switch to wooden theme", "use wooden theme", "set theme to wooden", "set theme wooden", "switch to wooden theme", "switch theme to wooden", "switch theme wooden",
-				// 	],
-				// 	action: () => {
-				// 		set_theme("picnic.css");
-				// 	},
-				// 	enabled: false,
-				// 	// enabled: () => get_theme() != "picnic.css",
-				// 	description: localize("Makes JS Paint look like a picnic in the park."),
-				// },
 			],
 		},
 		{
