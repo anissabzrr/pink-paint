@@ -3,7 +3,43 @@
 /* @import "../../lib/os-gui/build/peggys-pastels.css"; */
 
 :root {
-	--theme-loaded: "classic.css";
+    --theme-loaded: "girly-pink.css";
+
+    /* Main Windows UI */
+    --ButtonFace: #E7B8C7;
+    --ButtonLight: #F2D3DD;
+    --ButtonHilight: #FFF0F5;
+    --ButtonShadow: #B97C91;
+    --ButtonDkShadow: #704A58;
+
+    /* Text */
+    --ButtonText: #2F2026;
+    --GrayText: #946B79;
+
+    /* Window / dialog backgrounds */
+    --Window: #FFF8FA;
+    --WindowText: #2F2026;
+
+    /* Selected items */
+    --Hilight: #D85B8A;
+    --HilightText: #FFFFFF;
+
+    /* Main Paint workspace */
+    --AppWorkspace: #A97788;
+
+    /* Active title bar */
+    --ActiveTitle: #B83267;
+    --GradientActiveTitle: #EA8FAE;
+    --TitleText: #FFFFFF;
+
+    /* Inactive title bar */
+    --InactiveTitle: #C69AA9;
+    --GradientInactiveTitle: #DFC0CA;
+    --InactiveTitleText: #5A3945;
+
+    /* Tooltip-style areas */
+    --InfoWindow: #FFF2D9;
+    --InfoText: #2F2026;
 }
 
 /* .compare-reference is added to <body> when "compare-reference" is in the URL hash. */
