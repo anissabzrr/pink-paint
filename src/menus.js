@@ -973,7 +973,7 @@ const menus = {
 			label: localize("&Themes"),
 						submenu: [
 				{
-					emoji_icon: "⬜",
+					emoji_icon: "🤍",
 					label: localize("&Classic"),
 					speech_recognition: [
 						"classic theme",
