@@ -3,49 +3,60 @@
 /* @import "../../lib/os-gui/build/peggys-pastels.css"; */
 
 :root {
-    --theme-loaded: "girly-brown.css";
+	--theme-loaded: "girly-brown.css";
 
-    /* Main pale-pink Windows interface */
-    --ButtonFace: #FFDCE8;
-    --ButtonLight: #FFF0F5;
-    --ButtonHilight: #FFF7FA;
-    --ButtonShadow: #E89AB5;
-    --ButtonDkShadow: #B94F76;
+	/* Main interface */
+	--ButtonFace: #E8D2B8;
+	--ButtonLight: #F3E4D2;
+	--ButtonHilight: #FFF5E9;
+	--ButtonShadow: #B58B68;
+	--ButtonDkShadow: #6F4B35;
+	--ButtonText: #4A3025;
+	--GrayText: #9A806E;
 
 	/* Menu bar */
-    --Menu: #FFDCE8;
-    --MenuText: #4A1F2E;
+	--Menu: #E8D2B8;
+	--MenuText: #4A3025;
 
-    /* Interface text */
-    --ButtonText: #4A1F2E;
-    --GrayText: #B47A8E;
+	/* Active title bar */
+	--ActiveTitle: #7B4D35;
+	--GradientActiveTitle: #B9825C;
+	--ActiveTitleText: #FFF7EE;
 
-    /* Windows/dialog boxes */
-    --Window: #FFF9FB;
-    --WindowText: #4A1F2E;
+	/* Inactive title bar */
+	--InactiveTitle: #A98A72;
+	--GradientInactiveTitle: #D5BCA4;
+	--InactiveTitleText: #FFF7EE;
 
-    /* Selected items */
-    --Hilight: #F27CA6;
-    --HilightText: #FFFFFF;
+	/* Selected/highlighted items */
+	--Hilight: #A86645;
+	--HilightText: #FFF7EE;
 
-    /* Area surrounding the drawing canvas */
-    --AppWorkspace: #F7C8D8;
+	/* Windows and editable areas */
+	--Window: #FFF9F0;
+	--WindowText: #4A3025;
 
-    /* Active title bar */
-    --ActiveTitle: #F06F9D;
-    --GradientActiveTitle: #F7A1BF;
-    --TitleText: #FFFFFF;
+	/* Workspace/background areas */
+	--AppWorkspace: #B99B7D;
+	--Background: #8A6248;
 
-    /* Inactive title bar */
-    --InactiveTitle: #EAB3C6;
-    --GradientInactiveTitle: #F5CEDB;
-    --InactiveTitleText: #704052;
+	/* Links */
+	--HotTrackingColor: #8B4E32;
 
-    /* Tooltip/help colors */
-    --InfoWindow: #FFF4D9;
-    --InfoText: #4A1F2E;
+	/* 3D/interface aliases */
+	--ThreeDFace: #E8D2B8;
+	--ThreeDLightShadow: #F3E4D2;
+	--ThreeDHilight: #FFF5E9;
+	--ThreeDShadow: #B58B68;
+	--ThreeDDkShadow: #6F4B35;
+
+	/* Scrollbars */
+	--Scrollbar: #E8D2B8;
+
+	/* Info/tooltips */
+	--InfoWindow: #F5E5C8;
+	--InfoText: #4A3025;
 }
-
 /* .compare-reference is added to <body> when "compare-reference" is in the URL hash. */
 .compare-reference::after {
 	content: url("../../images/mspaint-win98-reference.png");
