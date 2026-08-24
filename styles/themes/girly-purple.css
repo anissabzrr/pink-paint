@@ -3,47 +3,59 @@
 /* @import "../../lib/os-gui/build/peggys-pastels.css"; */
 
 :root {
-    --theme-loaded: "girly-purple.css";
+	--theme-loaded: "girly-purple.css";
 
-    /* Main pale-pink Windows interface */
-    --ButtonFace: #FFDCE8;
-    --ButtonLight: #FFF0F5;
-    --ButtonHilight: #FFF7FA;
-    --ButtonShadow: #E89AB5;
-    --ButtonDkShadow: #B94F76;
+	/* Main interface */
+	--ButtonFace: #E6D3FF;
+	--ButtonLight: #F4ECFF;
+	--ButtonHilight: #FFF9FF;
+	--ButtonShadow: #B88AE0;
+	--ButtonDkShadow: #7950A3;
+	--ButtonText: #432457;
+	--GrayText: #9B83AA;
 
 	/* Menu bar */
-    --Menu: #FFDCE8;
-    --MenuText: #4A1F2E;
+	--Menu: #E6D3FF;
+	--MenuText: #432457;
 
-    /* Interface text */
-    --ButtonText: #4A1F2E;
-    --GrayText: #B47A8E;
+	/* Active title bar */
+	--ActiveTitle: #925AC2;
+	--GradientActiveTitle: #D6AEF2;
+	--ActiveTitleText: #FFFFFF;
 
-    /* Windows/dialog boxes */
-    --Window: #FFF9FB;
-    --WindowText: #4A1F2E;
+	/* Inactive title bar */
+	--InactiveTitle: #B99BD1;
+	--GradientInactiveTitle: #E2CFF2;
+	--InactiveTitleText: #FFFFFF;
 
-    /* Selected items */
-    --Hilight: #F27CA6;
-    --HilightText: #FFFFFF;
+	/* Selected/highlighted items */
+	--Hilight: #A86ED4;
+	--HilightText: #FFFFFF;
 
-    /* Area surrounding the drawing canvas */
-    --AppWorkspace: #F7C8D8;
+	/* Windows and editable areas */
+	--Window: #FFF9FF;
+	--WindowText: #432457;
 
-    /* Active title bar */
-    --ActiveTitle: #F06F9D;
-    --GradientActiveTitle: #F7A1BF;
-    --TitleText: #FFFFFF;
+	/* Workspace/background areas */
+	--AppWorkspace: #C9AEDF;
+	--Background: #A77AC7;
 
-    /* Inactive title bar */
-    --InactiveTitle: #EAB3C6;
-    --GradientInactiveTitle: #F5CEDB;
-    --InactiveTitleText: #704052;
+	/* Links */
+	--HotTrackingColor: #8A45BD;
 
-    /* Tooltip/help colors */
-    --InfoWindow: #FFF4D9;
-    --InfoText: #4A1F2E;
+	/* 3D/interface aliases */
+	--ThreeDFace: #E6D3FF;
+	--ThreeDLightShadow: #F4ECFF;
+	--ThreeDHilight: #FFF9FF;
+	--ThreeDShadow: #B88AE0;
+	--ThreeDDkShadow: #7950A3;
+
+	/* Scrollbars */
+	--Scrollbar: #E6D3FF;
+
+	/* Info/tooltips */
+	--InfoWindow: #F4E8FF;
+	--InfoText: #432457;
 }
 
 /* .compare-reference is added to <body> when "compare-reference" is in the URL hash. */
